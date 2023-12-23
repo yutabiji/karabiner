@@ -1,0 +1,92 @@
+{
+  "title": "Utilize All Keys in Japanese Input Mode",
+  "rules": [
+    {
+      "description": "Q to Y",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q"
+          },
+          "to": [
+            {
+              "key_code": "y"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "X to XTU",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x"
+          },
+          "to": [
+            {
+              "key_code": "x"
+            },
+            {
+              "key_code": "t"
+            },
+            {
+              "key_code": "u"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "C to NN",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c"
+          },
+          "to": [
+            {
+              "key_code": "n"
+            },
+            {
+              "key_code": "n"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
