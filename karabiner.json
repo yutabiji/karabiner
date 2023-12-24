@@ -5607,6 +5607,23 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "description": "ctrl + q to escape",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "q",
+                  "modifiers": { "mandatory": ["left_control"] }
+                },
+                "to": [
+                  {
+                    "key_code": "escape"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
           }
         ]
       },
