@@ -5400,6 +5400,26 @@
             ]
           },
           {
+            "description": "Option+b to double quote",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "b",
+                  "modifiers": {
+                    "mandatory": ["option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "international3",
+                    "modifiers": ["left_option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Option+n to tilda",
             "manipulators": [
               {
