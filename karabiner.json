@@ -5400,7 +5400,7 @@
             ]
           },
           {
-            "description": "Option+b to double quote",
+            "description": "Option+b to back slash",
             "manipulators": [
               {
                 "from": {
@@ -5413,6 +5413,26 @@
                   {
                     "key_code": "international3",
                     "modifiers": ["left_option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Option+shift+b to pipe",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "b",
+                  "modifiers": {
+                    "mandatory": ["option", "left_shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "international3",
+                    "modifiers": ["left_shift"]
                   }
                 ],
                 "type": "basic"
